@@ -1,0 +1,106 @@
+<h4 class="text-capitalize text-secondary" style="margin-left: 20px">
+  online courses
+</h4>
+<hr class="text-secondary" />
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-12">
+      <div class="card border-0 rounded" style="height: 87%">
+        <div class="position-relative">
+          <img alt="Card" class="w-100" src="/assets/imgs/th .jpeg" />
+          <div
+            class="position-absolute text-center text-secondary"
+            style="left: 20px; top: 30px"
+          >
+            <h4 class="text-white text-capitalize">my tasks</h4>
+            <small class="text"
+              >You have
+              <a href="">4 tasks</a>
+              to comlete</small
+            >
+            <span class="border position-absolute bg-success rounded menu">
+              <i class="pi pi-ellipsis-h text-white"></i>
+            </span>
+          </div>
+        </div>
+        <!-- start tasks -->
+        <div class="position-relative course p-3">
+          <div class="row gy-3">
+            <div class="col-6" *ngFor="let item of cards">
+              <div class="card p-3 border-0">
+                <i class="text-primary icn" [class]="item.icon"></i>
+                <div class="mt-4">
+                  <h3 class="fs-2 fw-bold text-secondary m-0">
+                    {{ item.num }}
+                  </h3>
+                  <small class="text-secondary">{{ item.txt }}</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end tasks -->
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8 col-md-6 col-12">
+      <div class="row">
+        <!-- start slider -->
+        <div class="col-6">
+
+<app-sliders [course]="course"></app-sliders>
+
+        </div>
+        <div class="col-6">
+
+          <app-sliders [course]="events"></app-sliders>
+
+                  </div>
+        <!-- end slider -->
+      </div>
+      <!-- start rewards -->
+<div class="rewards position-relative  mt-4 card">
+<div class="position-absolute w-25 bottom-0 end-0">
+<img src="/assets/imgs/17-dark.png" class="w-100" alt="">
+</div>
+<div class="p-4 para">
+  <p class="text-white fs-3 ">You have got <a href="" class="text-danger relink" >2300 bonus</a> points.
+    Feel free to use them in your lessons
+
+    </p>
+    <div class="d-flex gap-4 ">
+
+      <button type="button" class="btn btn-danger text-capitalize">get reward</button>
+      <button type ="button" class="btn text-capitalize mybutton text-white">how to</button>
+    </div>
+</div>
+</div>
+      <!-- end rewards -->
+    </div>
+  </div>
+
+  <!-- second row -->
+  <div class="row">
+    <div class="col-lg-4  col-12">
+      <app-allcourses></app-allcourses>
+    </div>
+
+  </div>
+  <!-- second row -->
+  <!-- third row -->
+  <div class="row mt-4">
+    <div class="col-lg-4 col-md-6 col-12">
+      <app-alllessons></app-alllessons>
+    </div>
+    <div class="col-lg-8 col-12">
+      <div class="card p-2">
+
+        <div >
+          <h5 class="text-capitalize m-0">learn activity</h5>
+          <small class="fw-bold text-secondary">Hours per course</small>
+        </div>
+      <app-chart2></app-chart2>
+      </div>
+    </div>
+  </div>
+  <!-- third row -->
+</div>

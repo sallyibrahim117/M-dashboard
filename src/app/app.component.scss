@@ -1,0 +1,15 @@
+.sidebar{
+  width: 240px;
+min-height: 100vh;
+  overflow-y: auto;
+  background-color: #242424;
+transition: all .3s ease-in-out;
+}
+.togglesidebar{
+  transform: translateX(-240px);
+  width: 0;
+}
+.main{
+transition: all .3s ease-in-out;
+  width: calc(100% - 240px);
+}

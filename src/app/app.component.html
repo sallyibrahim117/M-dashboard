@@ -1,0 +1,9 @@
+
+<div class="container-fluied d-flex" style="height: 100%">
+  <app-sidebar class="sidebar" [class.togglesidebar]="toggle()"></app-sidebar>
+  <div style="" class="main" [class.w-100]="toggle()">
+    <app-header (toggleSideMenu)="toggleSideMenu($event)"></app-header>
+    <router-outlet></router-outlet>>
+  </div>
+</div>
+

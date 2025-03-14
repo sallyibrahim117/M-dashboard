@@ -1,0 +1,36 @@
+<div class="sidebar p-3">
+  <div class="d-flex align-items-center mt-3 logo">
+
+    <div class="img">
+      <img src="assets/imgs/logo.png" class="w-100" alt="">
+    </div>
+<a href="" class="text-uppercase text-white fs-6">dark web</a>
+  </div>
+  <ul class="side-menu">
+    <li class="item  py-2  d-flex gap-2 align-items-center" [routerLink]="['/home']" routerLinkActive="active">
+      <i class="pi pi-home  text-white "></i>
+      <a  class="text-capitalize text-white  "  >dashboard</a></li>
+      <li class="item text-center py-2 mt-4  d-flex gap-2 align-items-center"  [routerLink]="['/accounts']" routerLinkActive="active" >
+      <i class="pi pi-users text-white "></i>
+
+        <a  class="text-capitalize text-white  ">accounts</a></li>
+        <li class="item text-center py-2  mt-4  d-flex gap-2 align-items-center" [routerLink]="['/corporate-data']" routerLinkActive="active">
+      <i class="pi  pi-user text-white "></i>
+
+          <a  class="text-capitalize text-white  ">corporate data</a></li>
+          <li class="item text-center py-2  mt-4  d-flex gap-2 align-items-center" [routerLink]="['/combolist-data']" routerLinkActive="active">
+      <i class="pi pi-file-check text-white "></i>
+
+            <a  class="text-capitalize text-white  ">combolist data</a></li>
+            <li class="item text-center py-2  mt-4  d-flex gap-2 align-items-center" [routerLink]="['/tables']" routerLinkActive="active">
+              <i class="pi pi-table text-white "></i>
+
+                    <a  class="text-capitalize text-white  ">tables</a></li>
+                    <li class="item text-center py-2  mt-4  d-flex gap-2 align-items-center" [routerLink]="['/online-courses']" routerLinkActive="active">
+                      <i class="pi pi-bookmark text-white"></i>
+
+                            <a  class="text-capitalize text-white  ">online courses</a></li>
+  </ul>
+</div>
+
+

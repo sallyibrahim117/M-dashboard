@@ -1,0 +1,47 @@
+.card{
+  background-color: #dae3dbed;
+}
+.btn-light{
+  font-size:11px
+}
+.txt-sm{
+  font-size: 12px;
+
+}
+.myimg{
+  width: 30px;
+}
+.uilink{
+  font-size: 14px;
+color: black;
+}
+.para{
+  font-size: 13px;
+  font-weight: bold;
+}
+.progress{
+  height: 4px;
+  margin-top: 0;
+  width: 100px;
+}
+.progress-pass{
+  background-color: #57b261ed !important;
+  width: 65%;
+}
+.progress-fail{
+  background-color: #ffc107 !important;
+  width: 40%;
+}
+.progress-inprogress{
+  background-color: #6f42c1 !important;
+  width: 70%;
+}
+.progress-completed{
+  background-color: #dc3545 !important;
+  width: 56%;
+}
+.progress-banned{
+  background-color: #198754 !important;
+  width: 82%;
+}
+

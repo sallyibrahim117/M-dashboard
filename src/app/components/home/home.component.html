@@ -1,0 +1,449 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-12">
+      <div class="mt-4">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active text-capitalize fs-5 text-white"
+              id="pills-activity-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-activity"
+              type="button"
+              role="tab"
+              aria-controls="pills-activity"
+              aria-selected="true"
+            >
+              activity
+            </button>
+          </li>
+          <li class="nav-item m-auto" role="presentation">
+            <button
+              class="nav-link text-white"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              Profile
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-white text-capitalize"
+              id="pills-settings-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-settings"
+              type="button"
+              role="tab"
+              aria-controls="pills-settings"
+              aria-selected="false"
+            >
+              settings
+            </button>
+          </li>
+        </ul >
+        <div class="tab-content mt-4" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active text-white  "
+            id="pills-activity"
+            role="tabpanel"
+            aria-labelledby="pills-activity-tab"
+          >
+          <!-- start of first part of activity -->
+            <div class="d-flex gap-3">
+              <div class="activity-img">
+                <img
+                  src="/assets/imgs/1.jpg"
+                  alt="profile img"
+                  class="rounded-circle w-100"
+                />
+              </div>
+              <div>
+                <div
+                  class="d-flex align-items-center justify-content-center gap-3"
+                >
+                  <h5 class="text-bold text-white m-0">Jone Doec</h5>
+                  <small class="text-secondary para">5 minutes ago</small>
+                </div>
+                <p class="para text-secondary">
+                  assign a new task Design weblayout
+                </p>
+              </div>
+              <!-- end  of first part of activity-->
+            </div>
+            <!-- start of imgs of activity -->
+            <div class="container mt-2">
+              <div class="row" style="margin-left: 40px">
+                <div
+                  class="col-3 justify-content-center d-flex"
+                  *ngFor="let im of imgs"
+                >
+                  <div class="activity-img2">
+                    <img [src]="im.im1" class="w-100 card" alt="" />
+                  </div>
+                </div>
+                <!-- comments and likes -->
+                <div class="d-flex mt-3 gap-3">
+                  <div class="text-primary d-flex gap-2">
+                    <i class="pi pi-comment"></i>
+                    <small>Comments</small>
+                  </div>
+                  <div class="text-warning d-flex gap-2">
+                    <i class="pi pi-heart-fill"></i>
+                    <small>Likes</small>
+                  </div>
+                </div>
+                <!-- end of comments and likes -->
+              </div>
+            </div>
+            <!-- end  of imgs of activity-->
+            <!-- start  of second part of activity-->
+
+            <div class="d-flex gap-3 mt-4">
+              <div class="activity-img">
+                <img
+                  src="/assets/imgs/2.jpg"
+                  alt="profile img"
+                  class="rounded-circle w-100"
+                />
+              </div>
+
+              <div >
+                <div
+                  class="d-flex align-items-center justify-content-center gap-3"
+                >
+                  <h5 class="text-bold text-white m-0">Jamis  Smith</h5>
+                  <small class="text-secondary para">5 minutes ago</small>
+                </div>
+                <p class="para text-secondary">
+                  assign a new task Design weblayout
+                </p>
+              </div>
+            </div>
+            <!-- end  of second part of activity-->
+             <!-- start img and para of jamis -->
+             <div class="container mt-2">
+              <div class="row" style="margin-left: 40px">
+                <div class="col-3">
+                  <div class="ml-3">
+                    <img src="assets/imgs/img4.jpg" class="w-100 card" alt="">
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+                    </p>
+                    <button class="btn btn-primary text-capitalize">design layout</button>
+                  </div>
+                </div>
+                 <!-- comments and likes -->
+                 <div class="d-flex mt-3 gap-3">
+                  <div class="text-primary d-flex gap-2">
+                    <i class="pi pi-comment"></i>
+                    <small>Comments</small>
+                  </div>
+                  <div class="text-warning d-flex gap-2">
+                    <i class="pi pi-heart-fill"></i>
+                    <small>Likes</small>
+                  </div>
+                </div>
+                <!-- end of comments and likes -->
+              </div>
+
+             </div>
+             <!-- end img and para of jamis-->
+
+              <!-- start  of third part of activity-->
+<div class="mt-4">
+    <!-- start of header third part -->
+  <div class="d-flex gap-3 ">
+    <div class="activity-img">
+      <img
+        src="/assets/imgs/3.jpg"
+        alt="profile img"
+        class="rounded-circle w-100"
+      />
+    </div>
+
+    <div >
+      <div
+        class="d-flex align-items-center justify-content-center gap-3"
+      >
+        <h5 class="text-bold text-white m-0">Jone  Smith</h5>
+        <small class="text-secondary para">5 minutes ago</small>
+      </div>
+      <p class="para text-secondary">
+        assign a new task Design weblayout
+      </p>
+    </div>
+  </div>
+  <!-- end of header third part -->
+   <div class="" style="margin-left: 60px;">
+
+     <!-- start paragrapj -->
+      <p class="" >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper
+      </p>
+     <!-- end paragrapj -->
+      <!-- comments and likes -->
+      <div class="d-flex mt-3 gap-3">
+        <div class="text-primary d-flex gap-2">
+          <i class="pi pi-comment"></i>
+          <small>Comments</small>
+        </div>
+        <div class="text-warning d-flex gap-2">
+          <i class="pi pi-heart-fill"></i>
+          <small>Likes</small>
+        </div>
+      </div>
+      <!-- end of comments and likes -->
+   </div>
+</div>
+ <!-- end of third part -->
+              <!-- start  of forth part of activity-->
+              <div class="mt-4">
+                <!-- start of header forth part -->
+              <div class="d-flex gap-3">
+                <div class="activity-img">
+                  <img
+                    src="/assets/imgs/4.jpg"
+                    alt="profile img"
+                    class="rounded-circle w-100"
+                  />
+                </div>
+
+                <div >
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-3"
+                  >
+                    <h5 class="text-bold text-white m-0">Sally  Smith</h5>
+                    <small class="text-secondary para">5 minutes ago</small>
+                  </div>
+                  <p class="para text-secondary">
+                    assign a new task Design weblayout
+                  </p>
+                </div>
+              </div>
+              <!-- end of header forth part -->
+               <div class=" bg-info activity-para p-2 " style="margin-left: 60px;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ullam a quam saepe! Praesentium explicabo consequuntur adipisci cum a optio nam officia culpa, hic quas nulla facilis quidem sed dicta!</p>
+               </div>
+               </div>
+              <!-- end of forth part -->
+ <!-- start  of fifth part of activity-->
+ <div class="mt-4">
+  <!-- start of header fifth part -->
+<div class="d-flex gap-3">
+  <div class="activity-img">
+    <img
+      src="/assets/imgs/4.jpg"
+      alt="profile img"
+      class="rounded-circle w-100"
+    />
+  </div>
+
+  <div >
+    <div
+      class="d-flex align-items-center justify-content-center gap-3"
+    >
+      <h5 class="text-bold text-white m-0">Sally  Smith</h5>
+      <small class="text-secondary para">5 minutes ago</small>
+    </div>
+    <p class="para text-secondary">
+      assign a new task Design weblayout
+    </p>
+  </div>
+</div>
+<!-- end of header fifth part -->
+ <div class=" bg-success activity-para p-2 " style="margin-left: 60px;">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ullam a quam saepe! Praesentium explicabo consequuntur adipisci cum a optio nam officia culpa, hic quas nulla facilis quidem sed dicta!</p>
+ </div>
+ </div>
+<!-- end of fifth part -->
+          </div>
+          <div
+            class="tab-pane fade p-2"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+          >
+            <div class="container mt-4">
+              <div class="row">
+                <div class="col-3">
+                  <div>
+                    <h6 class="m-0 text-white">Full Name</h6>
+                    <small class="text-secondary">Johnathan Deo</small>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div>
+                    <h6 class="m-0 text-white text-capitalize">mobile</h6>
+                    <small class="text-secondary"> 012121215055</small>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div>
+                    <h6 class="m-0 text-white text-capitalize">email</h6>
+                    <small class="text-secondary">
+                      johnatha &#64; admin.com</small
+                    >
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div>
+                    <h6 class="m-0 text-white text-capitalize">location</h6>
+                    <small class="text-secondary"> london</small>
+                  </div>
+                </div>
+              </div>
+              <!-- start para of profile -->
+              <div class="mt-4 text-secondary paragraphs ml-2 fs-6">
+                <p>
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                  arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                  justo. Nullam dictum felis eu pede mollis pretium. Integer
+                  tincidunt.Cras dapibus. Vivamus elementum semper nisi. Aenean
+                  vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+                  consequat vitae, eleifend ac, enim.
+                </p>
+                <p class="mt-3">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry. Lorem Ipsum has been the industry's standard dummy
+                  text ever since the 1500s, when an unknown printer took a galley
+                  of type and scrambled it to make a type specimen book. It has
+                  survived not only five centuries
+                </p>
+                <p class="mt-3">
+                  was popularised in the 1960s with the release of Letraset sheets
+                  containing Lorem Ipsum passages, and more recently with desktop
+                  publishing software like Aldus PageMaker including versions of
+                  Lorem Ipsum.
+                </p>
+              </div>
+               <!-- start para of profile -->
+            </div>
+            <div class="skills py-4" style="margin-left: 20px">
+              <h5 class="text-white">skill set</h5>
+              <div class="text-secondary d-flex justify-content-between w-100">
+                <label>word press</label>
+                <span>80%</span>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-success"
+                  id="p1"
+                  role="progressbar"
+                  style="width: 80%"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div
+                class="text-secondary d-flex justify-content-between w-100 mt-3"
+              >
+                <label> react</label>
+                <span>50%</span>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 50%"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div
+                class="text-secondary d-flex justify-content-between w-100 mt-3"
+              >
+                <label> VueJS</label>
+                <span>45%</span>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-warning"
+                  role="progressbar"
+                  style="width: 45%"
+                  aria-valuenow="45"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div
+                class="text-secondary d-flex justify-content-between w-100 mt-3"
+              >
+                <label> NextJS</label>
+                <span>15%</span>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 15%"
+                  aria-valuenow="15"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade "
+            id="pills-settings"
+            role="tabpanel"
+            aria-labelledby="pills-settings-tab"
+          >
+         <app-form></app-form>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-md-12">
+      <div class="card border-0 mt-4">
+        <img
+          src="/assets/imgs/login-register.jpg"
+          class="card-img-top position-relative"
+          alt="..."
+        />
+        <div
+          class="w-25 position-absolute start-50 translate-middle circled-img"
+        >
+          <img src="/assets/imgs/1.jpg" class="rounded-circle w-100" />
+        </div>
+        <div class="card-body mt-4 text-center">
+          <h5 class="card-title pt-4">Jonathan Dominic</h5>
+          <p class="card-text">Web Designer & Developer</p>
+          <a href="#" class="btn btn-primary text-capitalize">follow</a>
+          <div class="mt-4">
+            <div class="row">
+              <div class="col-4" *ngFor="let item of Followers">
+                <div>
+                  <h6 class="text-bold">{{ item.numbers }}</h6>
+
+                  <p class="text-capitalize" style="font-size: 13px">
+                    {{ item.desc }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8">
+      <app-charts class="mt-4"></app-charts>
+    </div>
+  </div>
+
+
+</div>

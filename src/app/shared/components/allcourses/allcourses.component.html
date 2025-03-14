@@ -1,0 +1,28 @@
+<div class="card border border-secondary-subtle p-3 ">
+  <h6 class="text-capitalize m-0">Recommended for you</h6>
+  <small class="fw-bold text-secondary txt-sm">8k social visitors</small>
+  <div class="w-25 mt-3">
+
+    <button type="button" class="btn btn-light text-capitalize ">all courses</button>
+  </div>
+  <ul class="mt-4 position-relative mylist">
+    <li *ngFor="let item of mycourses ; let i =index"  class="d-flex justify-content-between align-items-center p-2" [class.border-bottom]="i<mycourses.length-1" >
+
+
+        <div class="d-flex gap-3  align-items-center">
+
+          <h5 class="text-capitalize p-2 h-100 rounded letter text-white"
+           [ngStyle]="{'background-color':item.mycolor}">{{item.name}}</h5>
+          <div class="p-1">
+            <a href="#" class="uilink">{{item.title}}</a>
+            <p class="para text-secondary">{{item.num}}</p>
+          </div>
+        </div>
+        <a class="border-0  btn btn-light arrow-content d-flex justify-content-center align-items-center">
+  <i class="text-secondary " [class]="item.icon"></i>
+        </a>
+
+
+    </li>
+  </ul>
+</div>

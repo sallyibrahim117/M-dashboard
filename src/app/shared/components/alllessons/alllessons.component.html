@@ -1,0 +1,45 @@
+<div class="card border border-secondary-subtle p-3 ">
+  <div class="d-flex justify-content-between">
+
+    <div>
+
+      <h6 class="text-capitalize m-0">Active Lessons</h6>
+      <small class="fw-bold text-secondary txt-sm">Avg. 72% completed lessons</small>
+    </div>
+
+    <div class="w-25 mt-3">
+
+      <button type="button" class="btn btn-light text-capitalize ">all lessons</button>
+    </div>
+
+  </div>
+  <ul class="mt-4">
+    <li class="d-flex gap-3 align-items-center p-2" *ngFor="let item of mylessons let i =index" [class.border-bottom]="i<mylessons.length-1" >
+      <div class="d-flex align-items-center gap-2 h-100">
+
+        <div class="myimg h-100">
+          <img [src]="item.img" class="w-100" alt="icon">
+        </div>
+        <div class="h-100">
+          <a href="#" class="uilink">{{item.title}}</a>
+          <p class="para text-secondary">{{item.txt}}</p>
+        </div>
+      </div>
+      <div class="progress d-flex " [ngStyle]="{'background-color':item.progresscolor}">
+        <div
+          class="progress-bar progress-{{item.status}}"
+          id="p1"
+          role="progressbar"
+
+          aria-valuenow=`${item.num}`
+          aria-valuemin="0"
+          aria-valuemax="100"
+
+        ></div>
+
+      </div>
+      <span class="para text-secondary">{{item.percentage}}</span>
+    </li>
+  </ul>
+
+  </div>

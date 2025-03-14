@@ -1,0 +1,39 @@
+
+.activity-img{
+  width: 50px;
+}
+.para{
+  font-size: 12px;
+}
+.activity-img2{
+  width: 250px;
+}
+.activity-para{
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+}
+.card{
+.circled-img{
+  bottom: 185px
+}
+}
+.progress{
+  height: 7px;
+  margin-top: 0;
+}
+// @media screen and (min-width: 400px) and (max-width: 1024px) {
+//   .circled-img{
+//     bottom: 1px
+//   }
+// }
+
+.nav-link.active{
+  background: transparent;
+  border-bottom: 2px solid blue;
+  border-radius: 0px;
+
+
+}

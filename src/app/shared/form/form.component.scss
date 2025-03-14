@@ -1,0 +1,36 @@
+:host ::ng-deep{
+  .p-checkbox .p-checkbox-box {
+    background: #221f1f;
+    border: #221f1f;
+  }
+}
+#login{
+  background: #383a3d;
+}
+#login input{
+  border: 0;
+  width: 100%;
+
+  box-sizing: border-box;
+font-size: 17px;
+border-radius: 7px !important;
+  background: #221f1f;
+  height: 3rem;
+
+}
+.form-select{
+  background-color: #221f1f;
+
+}
+.form-select > option{
+  font-weight: normal;
+  font-size: 14px;
+}
+.form-control::placeholder , .form-select ,.form-check-label{
+  color: #99A1B7;
+  opacity: 1;
+  font-weight: 600;
+}
+.is-invalid{
+  border: 1px solid red !important;
+}

@@ -1,0 +1,44 @@
+:host ::ng-deep{
+  .p-carousel-indicators {
+    position: absolute !important;
+
+    right: 1px !important;
+    top: 27px !important;
+}
+.p-carousel .p-carousel-content .p-carousel-next,.p-carousel .p-carousel-content .p-carousel-prev{
+  display: none;
+}
+}
+.card{
+
+  .menu{
+    right: -150px;
+    top: -10px;
+  }
+  .text{
+    color: antiquewhite;
+  }
+  .course{
+    bottom: 81px;
+    .card{
+      background-color: #dae3dbed;;
+      .icn{
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.rewards{
+background-color: #071437;
+  height: 200px;
+  .para{
+    width: 68%;
+  }
+  .relink{
+    border-bottom: 3px solid #F8285A;
+  }
+  .mybutton{
+    background-color: #3d4e7e;
+  }
+}

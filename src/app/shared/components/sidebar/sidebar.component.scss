@@ -1,0 +1,42 @@
+.sidebar{
+  position: fixed;
+  left: 0px;
+top: 0px;
+width: 240px;
+max-height: 100vh;
+
+  // --body-bg: #050505;
+  .logo{
+    position: relative;
+    .img{
+      width: 50%;
+    }
+
+  }
+  .logo::after{
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    content: "";
+    background-color: gray;
+
+    bottom: -12px;
+  }
+  .side-menu{
+    margin-top: 2rem !important;
+    height: calc(100vh - 90px);
+    overflow: auto;
+
+    .item{
+      padding-left: 18px;
+      a{
+font-size: 16px;
+      }
+    }
+    .active{
+      border:0px ;
+      background-color: #333;
+      box-shadow: -3px 0px 1px #0eaeca
+    }
+  }
+}

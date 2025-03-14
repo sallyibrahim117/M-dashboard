@@ -1,0 +1,241 @@
+
+<div
+class="d-flex h-100 justify-content-center flex-column"
+style="color: #071437"
+>
+
+ <form
+  id="login"
+  [formGroup]="myForm"
+  class=" p-4 card"
+  (ngSubmit)="submit()"
+>
+<div class="w-100 text-secondary">
+  <h4 class="fw-normal m-0 ">profile details</h4>
+  <small class="mb-1 details">Enter your details below</small>
+</div>
+<hr>
+  <div>
+
+    <div class="d-flex align-items-center">
+      <div class="col-3">
+        <label for=" name" class="fs-5 text-capitalize">full name</label>
+      </div>
+      <div class="col-8">
+        <div class="mb-3">
+
+          <input
+            type="text"
+            class="form-control "
+            id="name"
+            placeholder="Enter your full name"
+            formControlName="name"
+            [class.is-invalid]="
+              formControlls['name'].invalid && formControlls['name'].touched
+            "
+          />
+          <ng-container
+            *ngIf="
+              formControlls['name'].invalid &&
+              formControlls['name'].touched &&
+              formControlls['name'].errors
+            "
+          >
+            <small
+              class="text-danger"
+              *ngIf="formControlls['name'].errors['required']"
+              >name is required
+            </small>
+            <small
+              class="text-danger"
+              *ngIf="formControlls['name'].errors['pattern']"
+              >name must be only letters
+            </small>
+            <small
+              class="text-danger"
+              *ngIf="formControlls['name'].errors['minlength']"
+              >name must be more than 3 letters
+            </small>
+            <small
+              class="text-danger"
+              *ngIf="formControlls['name'].errors['maxlength']"
+              >name must be less than 20 letters
+            </small>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="">
+    <div class="d-flex align-items-center">
+      <div class="col-3">
+        <label for="exampleInputEmail1" class="fs-5 text-capitalize"
+          >your email</label
+        >
+      </div>
+      <div class="col-8">
+        <div class="mb-3">
+        <input
+          type="email"
+          class="form-control "
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          placeholder="Email or Phone Number"
+          formControlName="email"
+          [class.is-invalid]="
+            formControlls['email'].invalid &&
+            formControlls['email'].touched
+          "
+        />
+        <ng-container
+          *ngIf="
+            formControlls['email'].invalid &&
+            formControlls['email'].touched &&
+            formControlls['email'].errors
+          "
+        >
+          <small class="text-danger" *ngIf="formControlls['email'].errors"
+            >Email or Phone is required
+          </small>
+          <small
+            class="text-danger"
+            *ngIf="formControlls['email'].errors['email']"
+            >email must be contains &#64;
+          </small>
+        </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div class="d-flex align-items-center">
+      <div class="col-3">
+        <label for="phone" class="fs-5 text-capitalize">your phone</label>
+      </div>
+      <div class="col-8">
+        <div class="mb-3">
+        <input
+          type="number"
+          class="form-control "
+          id="phone"
+          placeholder="Your Phone Number"
+          formControlName="phone"
+          [class.is-invalid]="
+            formControlls['phone'].invalid &&
+            formControlls['phone'].touched
+          "
+        />
+        <ng-container
+          *ngIf="
+            formControlls['phone'].invalid &&
+            formControlls['phone'].touched &&
+            formControlls['phone'].errors
+          "
+        >
+          <small class="text-danger" *ngIf="formControlls['phone'].errors"
+            >phone is required
+          </small>
+          <small
+            class="text-danger"
+            *ngIf="formControlls['phone'].errors['pattern']"
+            >phone must be 11 numbers
+          </small>
+          <small
+            class="text-danger"
+            *ngIf="formControlls['phone'].errors['maxlength']"
+            >phone must be only 11 numbers
+          </small>
+        </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="d-flex align-items-center">
+      <div class="col-3">
+        <label for=" name" class="fs-5 text-capitalize">country</label>
+      </div>
+      <div class="col-8">
+        <div class="mb-3"
+        >
+        <p-dropdown
+
+        [options]="cities()"
+      formControlName="country"
+        optionLabel="name"
+        placeholder="Select a City"
+        [filter]="true"
+        [class.border-red]="
+        formControlls['country'].invalid &&
+        formControlls['country'].touched
+      "
+        />
+          <ng-container
+        *ngIf="
+          formControlls['country'].invalid &&
+          formControlls['country'].touched &&
+          formControlls['country'].errors
+        "
+      >
+        <small class="text-danger" *ngIf="formControlls['country'].errors['required']"
+          >you should select your country
+        </small>
+        </ng-container>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="d-flex align-items-center mt-3">
+      <div class="col-3">
+        <label for=" name" class="fs-5 text-capitalize"
+          >communication</label
+        >
+      </div>
+      <div class="col-8">
+        <div class="d-flex">
+
+          <div class="form-check form-check-inline gap-2 d-flex p-0">
+            <p-checkbox
+            formControlName="communication"
+            value="email"
+            inputId="inlineCheckbox1" />
+            <label
+              class="form-check-label text-capitalize"
+              for="inlineCheckbox1"
+              >email</label
+            >
+          </div>
+          <div class="form-check form-check-inline gap-2 d-flex p-0">
+            <p-checkbox
+            formControlName="communication"
+            value="phone"
+            inputId="inlineCheckbox2" />
+            <label
+              class="form-check-label text-capitalize"
+              for="inlineCheckbox2"
+              >phone</label
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <hr />
+  <div class="d-flex justify-content-end  align-items-center">
+    <button
+      type="submit"
+      class="btn btn-primary  mt-2 text-capitalize"
+    >
+      save changes
+    </button>
+  </div>
+</form>
+</div>
+

@@ -1,0 +1,50 @@
+<div class="card p-3 border course-card">
+  <h5 class="text-capitalize m-0">{{course.title}}</h5>
+  <small class="fw-bold text-secondary">{{course.des}}</small>
+  <p-carousel
+    [value]="cars"
+    [numVisible]="1"
+    [numScroll]="1"
+
+    [autoplayInterval]="3000"
+    class="mt-4"
+
+  >
+    <ng-template pTemplate="item" let-car>
+      <div class="d-flex">
+        <div class=" w-25 h-100">
+          <p-chart
+            type="doughnut"
+            [data]="data"
+            [options]="options"
+            class="w-full md:w-[30rem]"
+          />
+        </div>
+        <div class="w-100">
+          <h6 class="text-capitalize m-0">Ruby on Rails</h6>
+<div class="row ">
+<div class="col-6"*ngFor="let item of topics">
+
+<div class=" gap-2 d-flex align-items-center mt-2" >
+
+<span class="rounded">
+
+<i class="border fw-bold border-secondary text-secondary "[class]="item.arrow"></i>
+</span>
+              <small class="text-capitalize text-secondary fw-bold ">{{item.des}}</small>
+</div>
+
+
+</div>
+
+</div>
+</div>
+      </div>
+      <div class="mt-4 d-flex gap-4">
+
+        <button type="button" class="btn btn-light text-capitalize btn-slider ">{{course.btn1}}</button>
+        <button type="button" class="btn  text-capitalize btn-slider"[ngStyle]="{'background-color':course.bg , 'color':course.colortext}">{{course.btn2}}</button>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>
