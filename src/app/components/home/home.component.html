@@ -324,26 +324,32 @@
                   Lorem Ipsum.
                 </p>
               </div>
-               <!-- start para of profile -->
+               <!-- end para of profile -->
             </div>
             <div class="skills py-4" style="margin-left: 20px">
               <h5 class="text-white">skill set</h5>
-              <div class="text-secondary d-flex justify-content-between w-100">
-                <label>word press</label>
-                <span>80%</span>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar bg-success"
-                  id="p1"
-                  role="progressbar"
-                  style="width: 80%"
-                  aria-valuenow="80"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-              <div
+              <ng-container *ngFor="let myitem of arrofprogress()">
+
+                <div class="text-secondary d-flex justify-content-between w-100">
+                  <label> {{myitem.text}}</label>
+                  <span>{{myitem.percentage}}%</span>
+                </div>
+                <div class="progress n">
+                  <div
+                    class="progress-bar"
+                    id="p1"
+                    role="progressbar"
+
+                    aria-valuenow=`${myitem.percentage}`
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+
+                    [ngStyle]="{'background-color':myitem.backgroundcolor,'width':myitem.percentage+'%'}"
+                  ></div>
+                </div>
+              </ng-container>
+
+              <!-- <div
                 class="text-secondary d-flex justify-content-between w-100 mt-3"
               >
                 <label> react</label>
@@ -390,7 +396,7 @@
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
-              </div>
+              </div> -->
             </div>
           </div>
           <div
@@ -445,5 +451,5 @@
     </div>
   </div>
 
-
+<app-tables [tableDataHeaders]="cols" [tableData]="products"></app-tables>
 </div>

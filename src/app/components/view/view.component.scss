@@ -1,0 +1,30 @@
+.content{
+  &::before{
+    content: "";
+    width: 4px;
+    height: 76px;
+    background-color: rgb(205, 205, 205);
+    position: absolute;
+    left: -14px;
+    top: -2px;
+    border-radius: 2px;
+  }
+  &.inprogree{
+    &::before{
+      background-color:#7239ea;
+    }
+  }
+  &.pending{
+    &::before{
+      background-color:#f6c000;
+    }
+  }
+  &.success{
+    &::before{
+      background-color:#17c653;
+    }
+  }
+  span{
+    font-size: 18px;
+  }
+}

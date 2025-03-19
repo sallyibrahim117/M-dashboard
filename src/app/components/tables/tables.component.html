@@ -1,6 +1,6 @@
 <div class="container mt-4">
   <div class="card bg-dark" >
-    <p-table [columns]="cols" [value]="products" [tableStyle]="{ 'min-width': '50rem' }">
+    <p-table [columns]="tableDataHeaders" [value]="tableData" [tableStyle]="{ 'min-width': '50rem' }">
         <ng-template pTemplate="header" let-columns>
             <tr>
                 <th *ngFor="let col of columns" >
@@ -11,7 +11,17 @@
         <ng-template pTemplate="body" let-rowData let-columns="columns">
             <tr>
                 <td *ngFor="let col of columns" >
+                  @if(col.type=='status'){
+                    <span class="status status-{{rowData[col.field]}}">
                     {{ rowData[col.field] }}
+                    </span>
+                  }
+                  @else if (col.type =="date") {
+                    {{ rowData[col.field] |date}}
+                  }
+                  @else {
+                    {{ rowData[col.field] }}
+                  }
                 </td>
             </tr>
         </ng-template>
