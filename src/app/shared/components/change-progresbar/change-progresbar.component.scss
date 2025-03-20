@@ -1,0 +1,17 @@
+.card1{
+  background-color: #080655;
+  h2{
+    color: black;
+    font-size: 40px;
+  }
+  .txt{
+    ::before{
+      content:"";
+      height: 2px;
+      width: 20px;
+      background: green;
+
+    }
+  }
+
+}

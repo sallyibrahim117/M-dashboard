@@ -1,0 +1,23 @@
+
+<div class="card card1 p-3 d-flex flex-column h-100 justify-content-between">
+  <div class="text-secondary  pt-3">
+
+      <h2 class="text-capitalize m-0">{{progress.count}}</h2>
+
+    <small> {{progress.smallText}}</small>
+  </div>
+  <div>
+    <div class="text-secondary d-flex justify-content-between w-100">
+      <label>{{progress.text}}</label>
+      <span>{{progress.value}}%</span>
+    </div>
+    <div class="progress mt-1">
+      <div class="progress-bar " role="progressbar" aria-valuenow=`${progress.value}`
+      aria-valuemin="0" aria-valuemax="100"
+      [ngStyle]="{'width':progress.value+'%','background-color':progress.backgroundColor}"
+      >
+    </div>
+    </div>
+
+  </div>
+  </div>

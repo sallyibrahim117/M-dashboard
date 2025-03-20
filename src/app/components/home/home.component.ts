@@ -33,7 +33,18 @@ imgs:any[]=[{
 
 arrofprogress=signal<any[]>([{
   text:"word press",percentage:80,backgroundcolor:"#198754"
-}])
+},
+{
+  text:"HTML",percentage:95,backgroundcolor:"#155754"
+},
+{
+  text:"Java Script",percentage:60,backgroundcolor:"#35665"
+}
+,{
+  text:"Angular",percentage:70,backgroundcolor:"#988754"
+}
+
+])
 products: any[] = [
   {
     item: 'Macbook Air M1',
