@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { SidebarComponent } from "./shared/components/sidebar/sidebar.component";
 import { HeaderComponent } from "./shared/components/header/header.component";
 import { HomeComponent } from "./components/home/home.component";
+import { log } from 'node:console';
 
 @Component({
   selector: 'app-root',
@@ -18,4 +19,11 @@ export class AppComponent {
   toggleSideMenu(t:boolean){
 this.toggle.set(t)
   }
+  // ngOnInit(): void {
+
+  //   if (window.innerWidth < 767) { // Check screen width
+  //     this.toggle.set(true);
+  //     console.log(window.innerWidth)
+  //   }
+  // }
 }

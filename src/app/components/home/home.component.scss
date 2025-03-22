@@ -37,3 +37,8 @@
 
 
 }
+@media(max-width:767px){
+  .container, .container-sm {
+   max-width: 100% !important;
+  }
+}

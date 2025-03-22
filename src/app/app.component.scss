@@ -14,10 +14,8 @@ transition: all .3s ease-in-out;
   width: calc(100% - 240px);
 }
  @media (max-width:767px){
-  .sidebar{
-    display: none !important;
-  }
-  .main{
-    width: 100% !important;
-  }
+
+.main.m{
+  width: 100% !important;
+}
  }
