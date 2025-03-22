@@ -22,3 +22,11 @@
   height: calc(67vh - 90px);
   overflow: auto;
 }
+@media (min-width:768px) and (max-width:991px) {
+  .fatCard{
+    padding: 25px;
+    .fatPerson{
+      width: 50% !important;
+    }
+  }
+}
