@@ -1,0 +1,30 @@
+
+  <div class="dashed-border p-2 mt-3">
+    <div class="d-flex align-items-center">
+<div class="d-flex align-items-center gap-2">
+
+  <div class="w-25">
+
+    <img [src]="product.img" class="w-100" alt="">
+  </div>
+<a class="text-capitalize cardLink text-dark"> {{product.text}}</a>
+</div>
+<div class="justify-content-center d-flex border menu">
+
+  <i class="pi pi-ellipsis-h  "></i>
+</div>
+    </div>
+    <div class="d-flex align-items-center justify-content-between">
+<div>
+
+  <span class="text-capitalize text-secondary">to:</span>
+  <a class="text-capitalize cardLink text-dark">  {{product.name}}</a>
+</div>
+      <div class="border d-flex  rounded myStatus status-{{product.status}} justify-content-center">
+
+        <p class="text-capitalize cardLink2  " > {{product.status}}</p>
+      </div>
+    </div>
+
+  </div>
+

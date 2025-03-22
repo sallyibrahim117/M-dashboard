@@ -17,11 +17,11 @@ export class SharedChartComponent {
     const textColorSecondary = documentStyle.getPropertyValue('--text-color-secondary');
     const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
   this.data = {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    labels: ['Apr 04', 'Apr 07', 'MaApr 10', 'Apr 13', 'Apr 16'],
     datasets: [
         {
             label: 'First Dataset',
-            data: [50, 59, 80, 81, 56, 55, 40],
+            data: [10, 13, 17, 20.5, 24],
             fill: false,
             borderColor: "#198754",
             tension: 1.1
@@ -42,15 +42,18 @@ this.options = {
     },
     scales: {
         x: {
+
             ticks: {
                 color: textColorSecondary
             },
             grid: {
                 color: surfaceBorder,
-                drawBorder: false
+                drawBorder: false,
+
             }
         },
         y: {
+
             ticks: {
                 color: textColorSecondary
             },

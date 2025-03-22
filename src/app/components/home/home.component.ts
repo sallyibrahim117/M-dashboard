@@ -52,7 +52,7 @@ products: any[] = [
     DATEADDED: '02 Apr, 2025',
     price: 1000,
     QT: '58 PCS',
-    status:'in progress',
+    status:'inprogress',
     date:new Date()
   },
   {
@@ -70,7 +70,7 @@ products: any[] = [
     DATEADDED: '28 Oct, 2025',
     price: 3300,
     QT: '5 PCS',
-    status:'pendding',
+    status:'onhold',
     date:new Date()
   },
   {
@@ -79,7 +79,7 @@ products: any[] = [
     DATEADDED: '20 Feb, 2025',
     price: 89900,
     QT: '20 PCS',
-    status:'pendding',
+    status:'inprocess',
     date:new Date()
   },
   {
@@ -88,7 +88,7 @@ products: any[] = [
     DATEADDED: '02 Apr, 2025',
     price: 1000,
     QT: '58 PCS',
-    status:'pendding',
+    status:'completed',
     date:new Date()
   },
   {
@@ -97,7 +97,7 @@ products: any[] = [
     DATEADDED: '28 Oct, 2025',
     price: 3300,
     QT: '5 PCS',
-    status:'pendding',
+    status:'inprocess',
     date:new Date()
   },
 ];

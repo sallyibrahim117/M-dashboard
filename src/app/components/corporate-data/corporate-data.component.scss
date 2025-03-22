@@ -9,4 +9,16 @@
   height: 300px;
 }
 
-
+.fatCard{
+  background-color: #20202b;
+  .btn{
+    font-size: 13px;
+  }
+}
+.cardButon{
+  font-size: 13px;
+}
+.listOfProducts{
+  height: calc(67vh - 90px);
+  overflow: auto;
+}

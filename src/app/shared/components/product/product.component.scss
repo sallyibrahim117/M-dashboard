@@ -1,0 +1,33 @@
+
+.dashed-border{
+  border: 1px dashed wheat;
+}
+.cardLink{
+  font-size: 14px;
+}
+.menu{
+  height: 20px;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+.cardLink2{
+  font-size: 10px;
+
+}
+.myStatus{
+  height: 17px;
+  width: 55px;
+  &.status-confirmed{
+    background-color: #17c653;
+
+  }
+  &.status-snipping{
+    background-color: #8912dd;
+
+  }
+  &.status-delivered{
+    background-color: #c0ec0e;
+
+  }
+}

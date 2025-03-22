@@ -20,6 +20,55 @@
     <app-shared-chart></app-shared-chart>
   </div>
 </div>
+<div class="mt-4">
+<div class="row">
+  <div class="col-3">
+    <div class="card d-flex flex-column justify-content-center h-100 align-items-center fatCard" >
+      <h5 class="text-center text-white">Have you tried <br>
+        new eCommerce App ?</h5>
+        <div class="w-75 mt-4">
+
+          <img src="assets/imgs/2.svg" class="w-100" alt="">
+        </div>
+        <div class="mt-4 d-flex gap-3" >
+          <button class="btn text-capitalize bg-primary">view app</button>
+          <button class="btn text-capitalize bg-light">new product</button>
+        </div>
+    </div>
+  </div>
+  <div class="col-9">
+
+    <app-tables [tableDataHeaders]="cols" [tableData]="products"></app-tables>
+  </div>
+</div>
+</div>
+
+<div class="mt-4">
+<div class="row">
+  <div class="col-3">
+    <div class="card p-3" style="background-color: #bc279c;">
+      <h5 class="text-capitalize m-0">product delivery</h5>
+      <small class="text-capitalize text-secondary">1M products shipped so far</small>
+      <button class="btn bg-danger-subtle w-50 text-capitalize mt-2 cardButon"> order details</button>
+<div class="listOfProducts" >
+  <app-product [product]="pro1"></app-product>
+  <app-product [product]="pro2"></app-product>
+  <app-product [product]="pro3"></app-product>
+  <app-product [product]="pro4"></app-product>
+  <app-product [product]="pro5"></app-product>
+</div>
+
+    </div>
+  </div>
+  <div class="col-9">
+    <div class="card p-3" style="background-color: #20202b;">
+<h4 class="text-capitalize text-warning">stock report</h4>
+<small class="text-secondary">Total 2,356 Items in the Stock</small>
+      <app-tables [tableDataHeaders]="colsOftable" [tableData]="productsOftable"></app-tables>
+    </div>
+  </div>
+</div>
+</div>
   <div class="card bg-white p-2 mt-4">
     <h5 class="text-capitalize">grid image</h5>
     <div class="container p-4">
