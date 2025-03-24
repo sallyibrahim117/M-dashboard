@@ -1,0 +1,47 @@
+<div class="container">
+  <form [formGroup]="myForm">
+
+    <label for="">you are:</label>
+    <p-dropdown
+
+    [options]="developers()"
+
+    optionLabel="name"
+    placeholder="Select"
+    [filter]="true"
+
+    />
+    <div class="d-flex gap-2 text-white mt-3">
+
+    <h4 class="text-capitalize ">skills:</h4>
+    <div class="bg-success d-flex align-items-center justify-content-center rounded" style="width: 34px;
+      height: 25px;"><i class="pi pi-plus-circle "></i></div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+
+        <p-dropdown
+
+        [options]="skills()"
+
+        optionLabel="name"
+        placeholder="Select"
+        [filter]="true"
+
+        />
+      </div>
+      <div class="col-5">
+        <div class="w-100 h-100">
+
+          <input type="number" name="" id="" placeholder="experience" class="w-100 h-100">
+        </div>
+      </div>
+      <div class="col-1 d-flex align-items-center">
+        <div class="bg-danger text-white d-flex align-items-center justify-content-center rounded" style="width: 34px;
+      height: 25px;">
+        <i class="pi pi-minus-circle"></i>
+        </div>
+      </div>
+    </div>
+</form>
+</div>

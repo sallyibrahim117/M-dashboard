@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ArrayFormComponent } from "../../shared/components/array-form/array-form.component";
 
 @Component({
   selector: 'app-accounts',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ArrayFormComponent],
   templateUrl: './accounts.component.html',
   styleUrl: './accounts.component.scss'
 })
