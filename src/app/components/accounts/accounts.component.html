@@ -1,32 +1,35 @@
-<div class="card m-auto mt-4 border-0">
-  <div class="card-header ">
-   <h4 class="text-capitalize"> my contacts</h4>
-    <p>Checkout my contacts here</p>
-  </div>
-  <ul class="p-0 m-0" style="background: #595454;">
-    <ng-container *ngFor="let item of contacts">
+<div class="container">
 
-      <li class="p-3 d-flex align-items-center gap-3">
+  <div class="card  mt-4 border-0">
+    <div class="card-header ">
+     <h4 class="text-capitalize"> my contacts</h4>
+      <p>Checkout my contacts here</p>
+    </div>
+    <ul class="p-0 m-0" style="background: #595454;">
+      <ng-container *ngFor="let item of contacts">
 
-        <div style="width: 50px;" class="position-relative">
+        <li class="p-3 d-flex align-items-center gap-3">
 
-          <img [src]="item.img" class="rounded-circle w-100">
-          <i class="pi pi-circle-fill position-absolute"></i>
-        </div>
+          <div style="width: 50px;" class="position-relative">
 
-
-          <div>
-            <h6 class="text-capitalize text-bold  m-0">{{item.name}}</h6>
-            <small class="">{{item.email}}</small>
+            <img [src]="item.img" class="rounded-circle w-100">
+            <i class="pi pi-circle-fill position-absolute"></i>
           </div>
 
 
-      </li>
-    </ng-container>
+            <div>
+              <h6 class="text-capitalize text-bold  m-0">{{item.name}}</h6>
+              <small class="">{{item.email}}</small>
+            </div>
 
 
-  </ul>
+        </li>
+      </ng-container>
+
+
+    </ul>
+  </div>
 </div>
 
-  <app-array-form></app-array-form>
+  <app-array-form ></app-array-form>
 

@@ -1,7 +1,7 @@
-<div class="container">
-  <form [formGroup]="myForm">
+<div class="container mt-4">
+  <form [formGroup]="myForm " class="w-50"(submit)="save()">
 
-    <label for="">you are:</label>
+    <label for="" class="text-white">you are:</label>
     <p-dropdown
 
     [options]="developers()"
@@ -14,34 +14,41 @@
     <div class="d-flex gap-2 text-white mt-3">
 
     <h4 class="text-capitalize ">skills:</h4>
-    <div class="bg-success d-flex align-items-center justify-content-center rounded" style="width: 34px;
-      height: 25px;"><i class="pi pi-plus-circle "></i></div>
+    <button class="bg-success  text-white" style="width: 34px;
+      height: 25px;" (click)="addSkill()"><i class="pi pi-plus-circle "></i></button>
     </div>
-    <div class="row">
-      <div class="col-6">
+    <div formArrayName="skills">
+@for (item of skills().controls; track item ; let i =$index) {
 
-        <p-dropdown
+  <div class="row mt-3" [formGroupName]="i">
+    <div class="col-6">
 
-        [options]="skills()"
+      <p-dropdown
 
-        optionLabel="name"
-        placeholder="Select"
-        [filter]="true"
+      [options]="skillsList()"
 
-        />
-      </div>
-      <div class="col-5">
-        <div class="w-100 h-100">
+      optionLabel="name"
+      placeholder="Select"
+      [filter]="true"
+formControlName="skill"
+      />
+    </div>
+    <div class="col-5">
+      <div class="w-100 h-100">
 
-          <input type="number" name="" id="" placeholder="experience" class="w-100 h-100">
-        </div>
-      </div>
-      <div class="col-1 d-flex align-items-center">
-        <div class="bg-danger text-white d-flex align-items-center justify-content-center rounded" style="width: 34px;
-      height: 25px;">
-        <i class="pi pi-minus-circle"></i>
-        </div>
+        <input type="number" name="" id="" placeholder="experience" class="w-100 h-100" formControlName="exp">
       </div>
     </div>
+    <div class="col-1 d-flex align-items-center">
+      <button class="bg-danger text-white rounded" style="width: 34px;
+    height: 25px;" (click)="deleteSkill(i)">
+      <i class="pi pi-minus-circle"></i>
+      </button>
+    </div>
+  </div>
+}
+    </div>
+    <button class="bg-primary  text-white text-capitalize mt-3" style="width: 150px;
+      height: 35px;">save changes</button>
 </form>
 </div>
