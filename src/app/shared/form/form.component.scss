@@ -3,7 +3,11 @@
     background: #221f1f;
     border: #221f1f;
   }
-
+  @media(max-width:400px){
+    .p-checkbox .p-checkbox-box {
+      font-size: 12px;
+    }
+  }
 }
 #login{
   background: #383a3d;
@@ -44,7 +48,7 @@ border-radius: 7px !important;
   }
   @media(max-width:400px){
     .form-control::placeholder , .form-select ,.form-check-label{
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 }
