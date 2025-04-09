@@ -3,24 +3,27 @@
 </h4>
 <hr class="text-secondary" />
 <div class="container">
-  <div class="row">
-    <div class="col-lg-4 col-md-6 col-12">
-      <div class="card border-0 rounded" style="height: 87%">
+  <div class="row gy-3">
+    <div class="col-lg-4 col-md-8 col-12">
+      <div class="card border-0 rounded">
         <div class="position-relative">
           <img alt="Card" class="w-100" src="/assets/imgs/th .jpeg" />
-          <div
-            class="position-absolute text-center text-secondary"
-            style="left: 20px; top: 30px"
-          >
-            <h4 class="text-white text-capitalize">my tasks</h4>
-            <small class="text"
-              >You have
-              <a href="">4 tasks</a>
-              to comlete</small
+          <div class="d-flex justify-content-between position-absolute px-4 w-100" style=" top: 25px">
+
+            <div
+              class=" text-center text-secondary"
+
             >
-            <span class="border position-absolute bg-success rounded menu">
-              <i class="pi pi-ellipsis-h text-white"></i>
-            </span>
+              <h4 class="text-white text-capitalize">my tasks</h4>
+              <small class="text"
+                >You have
+                <a href="">4 tasks</a>
+                to comlete</small
+              >
+            </div>
+            <button class="border btn btn-success rounded menu">
+              <i class="pi pi-ellipsis-h text-white d-flex justify-content-center"></i>
+            </button>
           </div>
         </div>
         <!-- start tasks -->
@@ -42,15 +45,15 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-8 col-md-6 col-12">
-      <div class="row">
+    <div class="col-lg-8  col-12">
+      <div class="row gy-3">
         <!-- start slider -->
-        <div class="col-6">
+        <div class="col-md-6 col-12">
 
 <app-sliders [course]="course"></app-sliders>
 
         </div>
-        <div class="col-6">
+        <div class="col-md-6 col-12">
 
           <app-sliders [course]="events"></app-sliders>
 
@@ -87,7 +90,7 @@
   </div>
   <!-- second row -->
   <!-- third row -->
-  <div class="row mt-4">
+  <div class="row mt-4 gy-3">
     <div class="col-lg-4 col-md-6 col-12">
       <app-alllessons></app-alllessons>
     </div>
