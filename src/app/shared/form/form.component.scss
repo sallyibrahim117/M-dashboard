@@ -3,6 +3,7 @@
     background: #221f1f;
     border: #221f1f;
   }
+
 }
 #login{
   background: #383a3d;
@@ -40,5 +41,10 @@ border-radius: 7px !important;
   }
   .sm-formTxt2{
     font-size: 10px;
+  }
+  @media(max-width:400px){
+    .form-control::placeholder , .form-select ,.form-check-label{
+      font-size: 14px;
+    }
   }
 }
