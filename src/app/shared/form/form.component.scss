@@ -34,3 +34,19 @@ border-radius: 7px !important;
 .is-invalid{
   border: 1px solid red !important;
 }
+@media(max-width:550px){
+  .sm-formTxt{
+    font-size: 16px;
+  }
+  .sm-formTxt2{
+    font-size: 11px;
+  }
+}
+@media(min-width:551px) {
+  .sm-formTxt{
+    font-size: 20px;
+  }
+  .sm-formTxt2{
+    font-size: 14px;
+  }
+}
